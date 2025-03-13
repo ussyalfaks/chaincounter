@@ -9,7 +9,6 @@ export default function Page() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const {
     data: count,
-    error : _error, // Prefixing with _ to ignore ESLint warning,
     isLoading,
   } = useReadContract({
     ...wagmiContractConfig,
