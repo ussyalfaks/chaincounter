@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nanum-myeongjo-regular {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 :root {
   --background: #ffffff;
@@ -17,5 +25,35 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Nanum Myeongjo", serif;
 }
+.loader {
+  width: 248px;
+  height: 248px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  border: 2px solid #FF3D00;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  border: 2px solid #000000;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+}
+    
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
