@@ -6,6 +6,7 @@ import { wagmiContractConfig } from './contract'
 
 
 export default function Page() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const {
     data: count,
     error,
